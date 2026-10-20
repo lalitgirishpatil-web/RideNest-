@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+}
+
+/* Navbar */
+.navbar-container {
+    background-color: #f5e6d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+    gap: 20px;
+}
+
+.brand {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: crimson;
+}
+
+/* Home Hero */
+.hero {
+    min-height: 600px;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url("cab.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Book a Ride button */
+.book-now {
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-now:hover {
+    background-color: darkred;
+}
+
+/* Booking form */
+.booking {
+    background-color: white;
+    width: 100%;
+    max-width: 390px;
+    margin: 30px auto;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking input,
+.booking select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.booking button {
+    background-color: crimson;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.booking button:hover {
+    background-color: darkred;
+}
+
+/* Booking confirmation */
+.confirmation-card {
+    background-color: #f1fff4;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid green;
+}
+
+/* Ride cards */
+.ride-options {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.ride-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ride-card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.ride-card:hover {
+    transform: translateY(-5px);
+}
+
+.driver-details {
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .navbar-container {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}

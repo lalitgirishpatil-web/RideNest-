@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideNest - Choose Your Ride</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+
+<body>
+
+    <div class="navbar-container">
+        <h2 class="brand">RideNest</h2>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <section class="ride-options">
+        <h1>Choose Your Ride</h1>
+        <p>Select a ride that fits your journey and budget.</p>
+
+        <div class="ride-cards">
+
+            <div class="ride-card">
+                <img src="bike.png" alt="Bike" width="150">
+                <h3>Bike</h3>
+                <p>₹100</p>
+                <p>Best for solo students</p>
+                <button onclick="chooseRide('Bike')">Choose Bike</button>
+            </div>
+
+            <div class="ride-card">
+                <img src="auto.png" alt="Auto rickshaw" width="150">
+                <h3>Auto</h3>
+                <p>₹200</p>
+                <p>Best for short trips</p>
+                <button onclick="chooseRide('Auto')">Choose Auto</button>
+            </div>
+
+            <div class="ride-card">
+                <img src="car.png" alt="Car" width="150">
+                <h3>Car</h3>
+                <p>₹300</p>
+                <p>Comfortable ride</p>
+                <button onclick="chooseRide('Car')">Choose Car</button>
+            </div>
+
+            <div class="ride-card">
+                <img src="sharing.png" alt="Shared ride" width="150">
+                <h3>Sharing</h3>
+                <p>₹250</p>
+                <p>Save money with friends</p>
+                <button onclick="chooseRide('Sharing')">Choose Sharing</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function chooseRide(ride) {
+            window.location.href =
+                "booking.html?ride=" + encodeURIComponent(ride);
+        }
+    </script>
+
+</body>
+</html>

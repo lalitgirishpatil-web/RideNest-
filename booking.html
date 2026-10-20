@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideNest - Booking</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <h2 class="brand">RideNest</h2>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Booking Form -->
+    <section class="booking-page">
+        <h1 style="text-align: center;">Book Your Ride</h1>
+
+        <div class="booking">
+
+            <label for="pickup">Pickup Location</label>
+            <input type="text" id="pickup" placeholder="Enter your pickup location">
+
+            <label for="destination">Drop off Location</label>
+            <input type="text" id="destination" placeholder="Enter your destination">
+
+            <label for="transportSelection">Choose your ride</label>
+            <select id="transportSelection">
+                <option value="Bike">Bike — ₹100</option>
+                <option value="Auto">Auto — ₹200</option>
+                <option value="Car">Car — ₹300</option>
+                <option value="Sharing">Sharing — ₹250</option>
+            </select>
+
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod">
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+                <option value="Card">Card</option>
+            </select>
+
+            <button id="bookRideBtn">Book Ride</button>
+
+            <div id="confirmation" class="confirmation-card"></div>
+
+            <div id="driverDetails" class="driver-details"></div>
+
+        </div>
+    </section>
+
+    <script src="day1.js"></script>
+
+</body>
+</html>

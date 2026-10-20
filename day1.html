@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RideNest</title>
+
+    <link rel="stylesheet" href="day1.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar-container">
+
+        <h2 class="brand">RideNest</h2>
+
+        <ul class="navbar">
+
+            <li class="nav-item">
+                <a href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#">Login</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>Your Ride, Your Way</h1>
+
+        <p>
+            RideNest is specially designed for college students,
+            offering affordable rides and convenient pickup and drop
+            services for a tension-free journey.
+        </p>
+
+
+        <!-- Booking Section -->
+
+        <div class="booking">
+
+            <label for="pickup">Pickup Location</label>
+
+            <input
+                type="text"
+                id="pickup"
+                placeholder="Enter your pickup location"
+            >
+
+
+            <label for="destination">Drop off Location</label>
+
+            <input
+                type="text"
+                id="destination"
+                placeholder="Enter your destination"
+            >
+
+
+            <label for="transportSelection">Choose your ride</label>
+
+            <select id="transportSelection">
+
+                <option>Bike: ₹100</option>
+                <option>Auto: ₹200</option>
+                <option>Car: ₹300</option>
+                <option>Transport sharing option: ₹250</option>
+
+            </select>
+
+
+            <label for="paymentMethod">Payment Method</label>
+
+            <select id="paymentMethod">
+
+                <option>Cash</option>
+                <option>UPI</option>
+                <option>Card</option>
+
+            </select>
+
+
+            <section class="ride-options">
+
+    <h2>Choose Your Ride</h2>
+
+    <div class="ride-cards">
+
+        <div class="ride-card">
+            <h3>🏍️ Bike</h3>
+            <p>₹100</p>
+            <p>Best for solo students</p>
+        </div>
+
+        <div class="ride-card">
+            <h3>🛺 Auto</h3>
+            <p>₹200</p>
+            <p>Best for short trips</p>
+        </div>
+
+        <div class="ride-card">
+            <h3>🚗 Car</h3>
+            <p>₹300</p>
+            <p>Comfortable ride</p>
+        </div>
+
+        <div class="ride-card">
+            <h3>👥 Sharing</h3>
+            <p>₹250</p>
+            <p>Save money with friends</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+          <div id="driverDetails" class="driver-details">
+
+    <h3>🚕 Driver Details</h3>
+
+    <p>👨 Driver: Rahul</p>
+    <p>🚗 Vehicle: White Swift</p>
+    <p>🔢 Vehicle No: MH 12 AB 1234</p>
+    <p>⭐ Rating: 4.7</p>
+
+     </div>            
+
+
+        <div id="driverDetails" class="driver-details">
+
+      <h3>🚕 Driver Details</h3>
+
+    <p>👨 Driver: Mohit</p>
+    <p>🛺 Vehicle: Auto</p>
+    <p>🔢 Vehicle No: MH12 CD 8392</p>
+    <p>⭐ Rating: 4.5</p>
+
+     </div>
+
+             <h3>🚕 Driver Details</h3>
+
+        <p>👨 Driver: Shankhar</p>
+        <p>🏍️ Vehicle: Bike</p>
+        <p>🔢 Vehicle No: MH12 XY 8462</p>
+        <p>⭐ Rating: 4.8</p>
+
+     </div>
+          
+    
+        <button>Book Ride</button>
+
+
+           
+        </div>
+
+    </section>
+
+
+    <script src="day1.js"></script>
+
+</body>
+
+</html>

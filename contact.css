@@ -1,0 +1,156 @@
+/* Contact */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #faf9f7;
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    margin: 0;
+    font-size: 28px;
+    color: #bd2342;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #bd2342;
+}
+
+.contact-section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 55px 20px 70px;
+    text-align: center;
+}
+
+.section-tag {
+    color: #bd2342;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.contact-section > p:not(.section-tag) {
+    color: #666;
+    line-height: 1.7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    background: white;
+    padding: 28px;
+    margin: 28px auto 0;
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8d0c8;
+    border-radius: 7px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #bd2342;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #92172f;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f1e9e6;
+}
+
+.site-footer h2 {
+    margin: 0 0 8px;
+    color: #bd2342;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #666;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-section {
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
